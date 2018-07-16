@@ -1,2 +1,2 @@
-# bmi_calculator
+# BMI calculator
 Bmi calculator application
