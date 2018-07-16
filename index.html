@@ -15,23 +15,23 @@
 
         <h1>Kalkulator BMI</h1>
 
-        <div class="bmi-form">
+        <form id="bmi-form" class="bmi-form">
             <div class="bmi-form-row">
                 <label for="height-input">Podaj wzrost w cm</label>
-                <input type="number" min="1" id="height-input">
+                <input type="number" min="1" required id="height-input">
             </div>
 
             <div class="bmi-form-row">
                 <label for="weight-input">Podaj wagę w kg</label>
-                <input type="number" min="1" id="weight-input">
+                <input type="number" min="1" required id="weight-input">
             </div>
-        </div>
 
-        <button type="button" id="submit" class="bmi-calculate-btn">oblicz</button>
+            <button type="submit" class="bmi-calculate-btn">oblicz</button>
+        </form>
     </div>
 
 </div>
 
-<script src="./js/app.js"></script>
+<script src="./js/app.js?v2"></script>
 </body>
 </html>
