@@ -28,7 +28,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(251, 225, 192, 0.85);
     border-radius: 5px;
 }
 
@@ -44,15 +44,25 @@ label {
     font-weight: 700;
 }
 
-button {
+.oblicz {
+    background-color: #984050;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
-    padding: 10px;
     display: inline-block;
     border-radius: 7px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    margin-top: 40px;
 }
 
 input {
     font-size: 1.5em;
+}
+
+input:focus {
+    border: 2px solid #984050;
+    color: #984050;
 }
 
