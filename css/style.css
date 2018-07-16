@@ -5,13 +5,14 @@
 body {
     background-image: url("../images/macarons.jpg");
     background-size: cover;
+    background-position: center;
     font-family: 'Quicksand', sans-serif;
 }
 
 .container {
-    max-width: 320px;
+    max-width: 600px;
     margin: auto auto;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,23 +24,40 @@ h1 {
 }
 
 .main-content {
-    height: 60%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     background-color: rgba(251, 225, 192, 0.85);
     border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
 }
 
-.wzrost,
-.waga {
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi-form-row {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    align-items: center;
 }
 
-label {
+.bmi-form-row input {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.bmi-form-row input:focus {
+    border: 2px solid #984050;
+    color: #984050;
+}
+
+.bmi-form-row label {
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -57,12 +75,4 @@ label {
     margin-top: 40px;
 }
 
-input {
-    font-size: 1.5em;
-}
-
-input:focus {
-    border: 2px solid #984050;
-    color: #984050;
-}
 
