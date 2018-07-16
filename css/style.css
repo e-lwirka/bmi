@@ -3,9 +3,8 @@
 }
 
 body {
-    background-image: url("../images/macarons.jpg");
+    background: url("../images/macarons.jpg?v2") no-repeat center;
     background-size: cover;
-    background-position: center;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -39,13 +38,19 @@ h1 {
 }
 
 .bmi-form-row {
-    display: flex;
-    flex-direction: column;
     margin: 20px 0;
     align-items: center;
 }
 
+.bmi-form-row label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .bmi-form-row input {
+    display: block;
     font-size: 1.5em;
     width: 100%;
     padding: 10px;
@@ -57,16 +62,13 @@ h1 {
     color: #984050;
 }
 
-.bmi-form-row label {
-    margin-bottom: 10px;
-    font-weight: 700;
-}
 
-.oblicz {
+.bmi-calculate-btn {
     background-color: #984050;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     display: inline-block;
+    border: none;
     border-radius: 7px;
     text-decoration: none;
     color: white;
